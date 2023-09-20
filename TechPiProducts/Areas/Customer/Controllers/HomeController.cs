@@ -1,9 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using TechPiProducts.Models;
+using TechPi.Models;
 
-namespace TechPiProducts.Controllers
+namespace TechPiProducts.Areas.Customer.Controllers
 {
+    [Area("Customer")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

@@ -1,4 +1,4 @@
-namespace TechPiProducts.Models
+namespace TechPi.Models
 {
     public class ErrorViewModel
     {

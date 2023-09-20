@@ -1,0 +1,60 @@
+﻿@page
+@model TechPiProductsRazor_Temp.Pages.Products.EditModel
+
+<form method="post">
+	<div class="border p-3 mt-4">
+		<div class="row pb-2">
+			<h2 class="text-primary">Edit Product</h2>
+			<hr />
+		</div>
+		<input asp-for="Product.Id" hidden/>
+		<input asp-for="Product.Created" hidden />
+		<div class="mb-3 row p-1">
+			<label asp-for="Product.DisplayOrder" class="p-0"></label>
+			<input asp-for="Product.DisplayOrder" class="form-control" />
+			<span asp-validation-for="Product.DisplayOrder" class="text-danger"></span>
+		</div>
+		<div class="mb-3 row p-1">
+			<label asp-for="Product.ProductCode" class="p-0"></label>
+			<input asp-for="Product.ProductCode" class="form-control" />
+			<span asp-validation-for="Product.ProductCode" class="text-danger"></span>
+		</div>
+		<div class="mb-3 row p-1">
+			<label asp-for="Product.ProductName" class="p-0"></label>
+			<input asp-for="Product.ProductName" class="form-control" />
+			<span asp-validation-for="Product.ProductName" class="text-danger"></span>
+		</div>
+		<div class="mb-3 row p-1">
+			<label asp-for="Product.ProductDescription" class="p-0"></label>
+			<textarea asp-for="Product.ProductDescription" class="form-control"></textarea>
+			<span asp-validation-for="Product.ProductDescription" class="text-danger"></span>
+		</div>
+		<div class="mb-3 row p-1">
+			<label asp-for="Product.Price" class="p-0"></label>
+			<input asp-for="Product.Price" class="form-control" />
+			<span asp-validation-for="Product.Price" class="text-danger"></span>
+		</div>
+		<div class="mb-3 row p-1">
+			<label asp-for="Product.InStock" class="p-0">Available <input asp-for="Product.InStock" class="form-check-input" checked="checked" /></label>
+		</div>
+
+		<div class="row">
+			<div class="col-6 col-md-3">
+				<button type="submit" class="btn btn-primary form-control"><i class="bi bi-pencil-square"></i> Edit</button>
+			</div>
+			<div class="col-6 col-md-3">
+				<a class="btn btn-secondary form-control" asp-page="/products/index">
+					<i class="bi bi-x-circle"></i> Cancel
+				</a>
+			</div>
+		</div>
+	</div>
+</form>
+
+@section Scripts{
+	@{
+		<partial name="_ValidationScriptsPartial" />
+	}
+}
+
+

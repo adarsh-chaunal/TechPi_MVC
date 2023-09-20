@@ -1,0 +1,51 @@
+﻿@page
+@model TechPiProductsRazor_Temp.Pages.Products.DeleteModel
+
+<form method="post">
+	<div class="border p-3 mt-4">
+		<div class="row pb-2">
+			<h2 class="text-primary">Edit Product</h2>
+			<hr />
+		</div>
+		<input asp-for="Product.Id" hidden />
+		<input asp-for="Product.Created" hidden />
+		<div class="mb-3 row p-1">
+			<label asp-for="Product.DisplayOrder" class="p-0"></label>
+			<input asp-for="Product.DisplayOrder" class="form-control" disabled />
+		</div>
+		<div class="mb-3 row p-1">
+			<label asp-for="Product.ProductCode" class="p-0"></label>
+			<input asp-for="Product.ProductCode" class="form-control" disabled />
+		</div>
+		<div class="mb-3 row p-1">
+			<label asp-for="Product.ProductName" class="p-0"></label>
+			<input asp-for="Product.ProductName" class="form-control" disabled />
+		</div>
+		<div class="mb-3 row p-1">
+			<label asp-for="Product.ProductDescription" class="p-0"></label>
+			<textarea asp-for="Product.ProductDescription" class="form-control" disabled ></textarea>
+		</div>
+		<div class="mb-3 row p-1">
+			<label asp-for="Product.Price" class="p-0"></label>
+			<input asp-for="Product.Price" class="form-control" disabled />
+		</div>
+		<div class="mb-3 row p-1">
+			<label asp-for="Product.InStock" class="p-0">Available <input asp-for="Product.InStock" class="form-check-input" checked="checked" disabled /></label>
+		</div>
+
+		<div class="row">
+			<div class="col-6 col-md-3">
+				<button type="submit" class="btn btn-danger form-control"><i class="bi bi-trash-fill"></i> Delete</button>
+			</div>
+			<div class="col-6 col-md-3">
+				<a class="btn btn-secondary form-control" asp-page="products/index">
+					<i class="bi bi-x-circle"></i> Cancel
+				</a>
+			</div>
+		</div>
+	</div>
+</form>
+
+
+
+

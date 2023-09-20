@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechPiProducts", "TechPiProducts\TechPiProducts.csproj", "{63B85FA3-F8AE-4688-AAB8-A984CBC14608}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechPiProducts", "TechPiProducts\TechPiProducts.csproj", "{63B85FA3-F8AE-4688-AAB8-A984CBC14608}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechPi.DataAccess", "TechPi.DataAccess\TechPi.DataAccess.csproj", "{D5C193AE-CDCE-48F2-A792-853413FA0303}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechPi.Models", "TechPi.Models\TechPi.Models.csproj", "{1439A9C3-BBD2-46D9-B5D6-350B55173DC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechPi.Utility", "TechPi.Utility\TechPi.Utility.csproj", "{E52F5309-E34F-4714-AD14-A3F38959B0CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{63B85FA3-F8AE-4688-AAB8-A984CBC14608}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63B85FA3-F8AE-4688-AAB8-A984CBC14608}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63B85FA3-F8AE-4688-AAB8-A984CBC14608}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5C193AE-CDCE-48F2-A792-853413FA0303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5C193AE-CDCE-48F2-A792-853413FA0303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5C193AE-CDCE-48F2-A792-853413FA0303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5C193AE-CDCE-48F2-A792-853413FA0303}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1439A9C3-BBD2-46D9-B5D6-350B55173DC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1439A9C3-BBD2-46D9-B5D6-350B55173DC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1439A9C3-BBD2-46D9-B5D6-350B55173DC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1439A9C3-BBD2-46D9-B5D6-350B55173DC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E52F5309-E34F-4714-AD14-A3F38959B0CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E52F5309-E34F-4714-AD14-A3F38959B0CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E52F5309-E34F-4714-AD14-A3F38959B0CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E52F5309-E34F-4714-AD14-A3F38959B0CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
